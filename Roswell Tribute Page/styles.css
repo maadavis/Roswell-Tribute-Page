@@ -83,12 +83,13 @@ grid-template-areas:
   text-decoration: underline;
 }
 
-#first {grid-area: one; text-align: center;}
-#second {grid-area: two; text-align: center;}
-#third {grid-area: three; text-align: center;}
-.text-one {grid-area: text1; background-color: #212529;}
-.text-two {grid-area: text2; background-color: #212529;}
-.text-three {grid-area: text3; background-color: #212529;}
-.resource-one {grid-area: res1; background-color: #212529;}
-.resource-two {grid-area: res2; background-color: #212529;}
-.resource-three {grid-area: res3; background-color: #212529;}
+#first {grid-area: one; text-align: center; background-color: #212529;}
+#second {grid-area: two; text-align: center; background-color: #212529;}
+#third {grid-area: three; text-align: center; background-color: #212529;}
+#resources {background-color: #212529;}
+.text-one {grid-area: text1;}
+.text-two {grid-area: text2;}
+.text-three {grid-area: text3;}
+.resource-one {grid-area: res1;}
+.resource-two {grid-area: res2;}
+.resource-three {grid-area: res3;}
