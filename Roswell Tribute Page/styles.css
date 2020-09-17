@@ -2,6 +2,8 @@ body {
   font-family: "Courier New", Courier;
   color: #62BC92;
   background-color: #000000;
+  margin: 0;
+  padding: 0;
 }
 
 header{
@@ -14,6 +16,7 @@ header{
   margin-bottom: 2em;
   color: inherit;
   background-color: inherit;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 h1 {
@@ -21,11 +24,12 @@ h1 {
   font-family: ;
   color: inherit;
   text-align: center;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 h2 {
   font-size: 2em;
-  font-family: inherit;
+  font-family: 'Ubuntu', sans-serif;
   color: inherit;
   text-align: center;
 }
@@ -62,14 +66,13 @@ footer {
 main {
 padding: 0 2em 2em 2em;
 display: grid;
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: 1fr;
 grid-gap: 1em;
 justify-items: center;
 align-items: center;
 grid-template-areas:
   "head head head"
   "one two three"
-  "text1 text2 text3"
   "res1 res2 res3";
 }
 
@@ -83,13 +86,14 @@ grid-template-areas:
   text-decoration: underline;
 }
 
-#first {grid-area: one; text-align: center; background-color: #212529;}
-#second {grid-area: two; text-align: center; background-color: #212529;}
-#third {grid-area: three; text-align: center; background-color: #212529;}
-#resources {background-color: #212529;}
-.text-one {grid-area: text1;}
-.text-two {grid-area: text2;}
-.text-three {grid-area: text3;}
-.resource-one {grid-area: res1;}
-.resource-two {grid-area: res2;}
-.resource-three {grid-area: res3;}
+#first {text-align: center; background-color: #212529;}
+#second {text-align: center; background-color: #212529;}
+#third {text-align: center; background-color: #212529;}
+#resources {display: flex; flex-direction: row; grid-area: res2;}
+#texts {display: flex; flex-direction: row; grid-area: two}
+.text-one {grid-area: one;}
+.text-two {grid-area: two;}
+.text-three {grid-area: three;}
+.resource-one {grid-area: res1; background-color: #212529;}
+.resource-two {grid-area: res2; background-color: #212529;}
+.resource-three {grid-area: res3; background-color: #212529;}
